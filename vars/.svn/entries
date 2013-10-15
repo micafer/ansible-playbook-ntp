@@ -1,0 +1,23 @@
+8
+
+dir
+0
+https://src-grycap.i3m.upv.es/svn/codecloud/branch/micafer/InfrastructureManager/AnsibleRecipes/ntp/vars
+https://src-grycap.i3m.upv.es/svn/codecloud
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+os_defaults.yml
+file
+
+
+
+add
+
