@@ -10,9 +10,9 @@
 - name: configure step-tickers
   action: template src=ntp/templates/step-tickers dest=/etc/ntp/step-tickers owner=root group=root
   notify:
-      - restart ntp
+      - restart {{ ntp_service }}
   
 - name: configure ntp.conf
   action: template src=ntp/templates/ntp.conf dest=/etc/ntp.conf owner=root group=root
   notify:
-      - restart ntp
+      - restart {{ ntp_service }}
