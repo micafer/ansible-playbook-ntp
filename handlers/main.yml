@@ -1,2 +1,5 @@
-- name: restart ntp
+- name: restart ntpd
   action: service name=ntpd state=restarted
+
+- name: restart ntp
+  action: service name=ntp state=restarted
