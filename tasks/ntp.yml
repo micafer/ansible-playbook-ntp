@@ -4,7 +4,7 @@
   when: redhat_os
 
 - name: Apt install ntp
-  action: apt pkg=ntp state=installed
+  action: apt pkg=ntp state=installed update_cache=yes cache_valid_time=604800
   when: debian_os
   
 - name: configure step-tickers
